@@ -1,0 +1,616 @@
+/* =====================================
+   TETAPAN ASAS
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f0df;
+    color: #4a3928;
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   NAVIGASI
+===================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+    background-color: #fffaf0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 6%;
+    box-shadow: 0 3px 15px rgba(70, 50, 30, 0.12);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #4a3928;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5b4935;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7c6042;
+}
+
+
+/* =====================================
+   BANNER UTAMA
+===================================== */
+
+.hero {
+    min-height: 600px;
+
+    background-image:
+        linear-gradient(
+            rgba(55, 43, 30, 0.45),
+            rgba(55, 43, 30, 0.55)
+        ),
+        url("images/church.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: auto;
+    color: white;
+}
+
+.cross {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 28px;
+    border-radius: 30px;
+    background-color: #e4c995;
+    color: #3e3022;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #fff0c9;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   SEKSYEN
+===================================== */
+
+.section {
+    padding: 90px 8%;
+    background-color: #f7f0df;
+}
+
+.alternate {
+    background-color: #fffaf0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    display: block;
+    color: #a28358;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+}
+
+.section-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    color: #4a3928;
+}
+
+
+/* =====================================
+   KANDUNGAN DENGAN GAMBAR
+===================================== */
+
+.content-box {
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    background-color: #fffaf0;
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(80, 60, 40, 0.10);
+}
+
+.alternate .content-box {
+    background-color: #f7f0df;
+}
+
+.image-right {
+    flex-direction: row;
+}
+
+.image-left {
+    flex-direction: row;
+}
+
+.content-image {
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(60, 40, 20, 0.18);
+}
+
+.content-text {
+    flex: 1;
+}
+
+.content-text h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #5c4630;
+}
+
+.content-text p {
+    margin-bottom: 15px;
+}
+
+
+/* =====================================
+   TEKS BIASA
+===================================== */
+
+.text-only {
+    max-width: 900px;
+    margin: auto;
+    background-color: #fffaf0;
+    padding: 35px 45px;
+    border-left: 5px solid #a28358;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(80, 60, 40, 0.08);
+}
+
+.text-only p {
+    margin-bottom: 18px;
+}
+
+.text-only p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================
+   KAD
+===================================== */
+
+.card-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.info-card {
+    background-color: #fffaf0;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(80, 60, 40, 0.10);
+
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+}
+
+.info-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.card-icon {
+    font-size: 45px;
+    margin: 10px 0 15px;
+}
+
+.info-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #5c4630;
+}
+
+
+/* =====================================
+   PERAYAAN
+===================================== */
+
+.festival-grid {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.festival-card {
+    background-color: #f7f0df;
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(80, 60, 40, 0.10);
+
+    transition: 0.3s;
+}
+
+.festival-card:hover {
+    transform: translateY(-7px);
+}
+
+.festival-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.festival-content {
+    padding: 25px;
+}
+
+.festival-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================
+   NILAI MURNI
+===================================== */
+
+.values-grid {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.value {
+    background-color: #fffaf0;
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 7px 20px rgba(80, 60, 40, 0.08);
+
+    transition: 0.3s;
+}
+
+.value:hover {
+    transform: translateY(-5px);
+}
+
+.value span {
+    color: #a28358;
+    font-weight: 600;
+}
+
+.value h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 21px;
+    margin: 8px 0;
+}
+
+.value p {
+    font-size: 14px;
+}
+
+
+/* =====================================
+   KESIMPULAN
+===================================== */
+
+.conclusion {
+    background-color: #6f8065;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.conclusion-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.conclusion h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.conclusion blockquote {
+    margin-top: 30px;
+    padding: 20px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
+
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+
+/* =====================================
+   NAMA AHLI KUMPULAN
+===================================== */
+
+.group-members {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff0c9;
+    border: 1px solid  # #211b15;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.group-members h4 {
+    font-family: 'Playfair Display', serif;
+    color:  #211b15;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.group-members p {
+    margin: 8px 0;
+    padding: 10px;
+    background-color: #eee5d7;
+    border-left: 4px solid #211b15;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #e4c995;
+}
+
+.group-members strong {
+    color: #211b15;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    background-color: #17130f;
+    color: #eee5d7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 700px;
+    margin: auto;
+}
+
+.footer-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 25px;
+    color: #b8aa96;
+}
+
+
+/* =====================================
+   BUTANG KEMBALI KE ATAS
+===================================== */
+
+.top-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    background-color: #a28358;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    font-size: 22px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+/* =====================================
+   RESPONSIF UNTUK TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =====================================
+   RESPONSIF UNTUK TELEFON
+===================================== */
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .content-box,
+    .image-right,
+    .image-left {
+        flex-direction: column;
+    }
+
+    .content-image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .festival-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .text-only {
+        padding: 25px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+}
